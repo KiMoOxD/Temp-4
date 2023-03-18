@@ -2574,3 +2574,134 @@
    }
 
   /* End Files */
+
+  /* Start Plans */
+
+   .plans {
+    padding: 20px;
+   }
+
+  @media (max-width: 767px ) {
+    .plans {
+      padding: 12px;
+     }
+  }
+
+  .plan-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+  }
+
+  @media (max-width:767px) {
+    .plan-cont {
+      grid-template-columns: minmax(260px, 1fr);
+    }
+  }
+
+  .plan-cont .plan {
+    background: white;
+    padding: 20px 20px 0 20px;
+  }
+
+  .plan-cont .plan .banner {
+    padding: 3px;
+  }
+
+  .plan-cont .plan .bann-content {
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+  }
+
+  .plan-cont .plan .bann-content h4:first-child {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -1px;
+  }
+
+  .plan-cont .plan .bann-content h4:last-child {
+    font-size: 40px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .plan-cont .plan .bann-content h4:last-child::before {
+    content: "$";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    font-size: 23px;
+  }
+
+  .plan-cont .plan ul  {
+    margin-top: 10px;
+  }
+
+  .plan-cont .plan ul li {
+    display: flex;
+    padding:15px 0;
+    align-items: center;
+  }
+
+  .plan-cont .plan ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+  }
+
+  .plan-cont .plan ul li p {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .plan-cont .plan ul li i:first-child {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  .plan-cont .plan .correct {
+    color: var(--green-color);
+  }
+
+  .plan-cont .plan .wrong {
+    color: var(--red-color);
+  }
+
+  .plan-cont .plan ul li i:last-child {
+    margin-left: 5px;
+    color: var(--grey-color);
+    font-size: 14px;
+  }
+
+  .plan-cont .plan:first-child .banner {
+    background: var(--green-color);
+  }
+
+  .plan-cont .plan:nth-child(2) .banner {
+    background: var(--blue-color);
+  }
+
+  .plan-cont .plan:last-child .banner {
+    background: var(--orange-color);
+  }
+
+  .plan-cont .plan a {
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: var(--green-color);
+    color: white;
+  }
+
+  .plan-cont .plan:nth-child(2) a {
+    background: var(--blue-color);
+  }
+
+  .plan-cont .plan:nth-child(3) a {
+    background: var(--orange-color);
+  }
+
+  /* End Plans */
